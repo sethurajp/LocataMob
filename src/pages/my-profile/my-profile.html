@@ -1,0 +1,85 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-item>
+    <ion-label floating>Profile Image</ion-label>
+    <ion-input type="text" [(ngModel)]="profile.profileUrl"></ion-input>
+</ion-item>
+
+
+          <ion-item>
+              <ion-label>
+             Name
+              </ion-label>
+              <ion-input type="text" [(ngModel)]="profile.firstName"></ion-input>
+            </ion-item>
+      
+
+                <ion-item>
+                    <ion-label>
+                      Mobile Number
+                    </ion-label>
+                    <ion-input type="text" [(ngModel)]="profile.mobile"></ion-input>
+                  </ion-item>
+
+                  <ion-item>
+                    <ion-label>
+                      Admission Number
+                    </ion-label>
+                    <ion-input type="text" [(ngModel)]="profile.adno"></ion-input>
+                  </ion-item>
+
+                  <ion-item>
+                    <ion-label>
+                      Gender
+                    </ion-label>
+                    <ion-input type="text" [(ngModel)]="profile.gender"></ion-input>
+                  </ion-item>
+
+                  <ion-item>
+                    <ion-label>
+                      Boarding Point
+                    </ion-label>
+                    <ion-input type="text" [(ngModel)]="profile.boarding"></ion-input>
+                  </ion-item>
+                
+                  <ion-item>
+                    <ion-label>
+                      Department
+                    </ion-label>
+                    <ion-input type="text" [(ngModel)]="profile.department"></ion-input>
+                  </ion-item>
+
+                  <ion-item>
+                    <ion-label>
+                     Sem
+                    </ion-label>
+                    <ion-input type="text" [(ngModel)]="profile.sem"></ion-input>
+                  </ion-item>
+
+                  <ion-item>
+                    <ion-label>
+                     Bus pass Type
+                    </ion-label>
+                    <ion-input type="text" [(ngModel)]="profile.buspass"></ion-input>
+                  </ion-item>
+
+                      <button ion-button clear color="positive" block (click)="createProfile()">
+                          Create Profile
+                        </button>
+
+</ion-content>

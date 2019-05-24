@@ -1,0 +1,30 @@
+<ion-content padding style="background:url(assets/img/S1jX2D8RykSXT6QEuVQr_LOGIN20PAGE.png) no-repeat center;background-size:cover;" id="page7">
+  <div class="spacer" style="width:300px;height:13px;" id="signup-spacer16"></div>
+  <h2 id="signup-heading3" style="color:#FFFFFF;text-align:center;">
+    Create Account
+  </h2>
+  <div class="spacer" style="width:300px;height:61px;" id="signup-spacer2"></div>
+  <form id="signup-form2">
+    <ion-list id="signup-list2">
+      <ion-item id="signup-input3">
+        <ion-label></ion-label>
+        <ion-input type="text" placeholder="Name"></ion-input>
+      </ion-item>
+      <ion-item id="signup-input4">
+        <ion-label></ion-label>
+        <ion-input type="email" [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}" placeholder="Email" ></ion-input>
+      </ion-item>
+      <ion-item id="signup-input5">
+        <ion-label></ion-label>
+        <ion-input type="password" [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}" placeholder="Create Password" ></ion-input>
+      </ion-item>
+    </ion-list>
+  </form>
+  <button id="signup-button3" ion-button color="calm" block style="font-weight:500;border-radius:12px 12px 12px 12px;" ion-button (click) = "register(user)" >
+    Sign up
+  </button>
+  <div class="spacer" style="width:300px;height:24px;" id="signup-spacer15"></div>
+  <button id="signup-button40" ion-button color="positive" block style="font-weight:500;border-radius:12px 12px 12px 12px;" on-click="goToLogin()">
+    Log in
+  </button>
+</ion-content>

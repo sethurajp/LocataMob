@@ -1,0 +1,34 @@
+<ion-menu [content]="mainContent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Home
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content id="side-menu21">
+    <button id="home-button7" ion-button clear color="stable" full style="color:#181718;text-align:left;" menuClose="" on-click="goToMyProfile()">
+      My Profile
+    </button>
+    <button id="home-button8" ion-button clear color="stable" full style="color:#100F10;text-align:left;" menuClose="" on-click="goToBusDetails()">
+      Bus Details
+    </button>
+    <button id="home-button9" ion-button clear color="stable" full style="color:#090809;text-align:left;" menuClose="" on-click="goToHelpMe()">
+      Help Me
+    </button>
+    <button id="home-button10" ion-button clear color="stable" full style="color:#19181A;text-align:left;" menuClose="" on-click="goToRouteMap()">
+      Route Map
+    </button>
+    <button id="home-button11" ion-button clear color="stable" full style="color:#19181A;text-align:left;" menuClose="" on-click="goToLocataSupport()">
+      Locata Support
+    </button>
+    <button id="home-button13" ion-button clear color="stable" full style="color:#1F1D21;text-align:left;" menuClose="" on-click="goToTermsAndConditions()">
+      Terms and Conditions
+    </button>
+    <button id="home-button14" ion-button clear color="stable" full style="color:#262226;text-align:left;" menuClose="" on-click="goToLogOut()">
+      Log Out
+    </button>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>

@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      My Profile
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+  <ion-list>
+    <ion-item>
+        <strong>UID:</strong> {{ userData.uid }}
+    </ion-item>
+  </ion-list>
+
+  <p><strong>
+    Name :{{(profileData | async)?.firstName}}</strong>
+  </p>
+  <p><strong>
+      Mobile Number :{{(profileData | async)?.mobile}}</strong>
+    </p>
+    <p><strong>
+        Admission Number :{{(profileData | async)?.adno}}</strong>
+      </p>
+      <p><strong>
+          Gender :{{(profileData | async)?.gender}}</strong>
+        </p>
+        <p><strong>
+            Boarding Point :{{(profileData | async)?.boarding}}</strong>
+          </p>
+          <p><strong>
+              Department :{{(profileData | async)?.department}}</strong>
+            </p>
+            <p><strong>
+                Sem :{{(profileData | async)?.sem}}</strong>
+              </p>
+              <p><strong>
+                  Bus Pass Type :{{(profileData | async)?.buspass}}</strong>
+                </p>  
+</ion-content>
+

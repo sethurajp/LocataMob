@@ -1,0 +1,41 @@
+<ion-content padding style="background:url(assets/img/ZzgFCYG1QJGi5hHXyt4Q_LOGIN20PAGE.png) no-repeat center;background-size:cover;" id="page6">
+  <div class="spacer" style="width:300px;height:50px;" id="login-spacer13"></div>
+  <h2 id="login-heading2" style="color:#FFFFFF;text-align:center;">
+    WELCOME
+  </h2>
+  <div class="spacer" style="width:300px;height:55.9844px;" id="login-spacer3"></div>
+  <form id="login-form1">
+    <ion-list id="login-list1">
+
+      <ion-item id="login-input1">
+        <ion-label></ion-label>
+          <ion-input type="text" [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}" placeholder="Email" >
+          </ion-input>
+      </ion-item>
+
+      <ion-item id="login-input2">
+        <ion-label></ion-label>
+        <ion-input type="password" [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}"  placeholder="Password" ></ion-input>
+     
+      </ion-item>
+
+    </ion-list>
+    <div class="spacer" style="height:40px;" id="login-spacer1"></div>
+    <button id="login-button1" ion-button color="calm" block style="font-weight:500;border-radius:12px 12px 12px 12px;" block (click)= "login(user)">
+      Log in
+    </button>
+    <label class="error-message">{{errorMessage}}</label>
+
+    <div class="spacer" style="width:300px;height:10px;" id="login-spacer15"></div>
+
+    <button  on-click="sendReset()" id="login-button3" ion-button clear color="dark" block style="font-weight:500;">
+     Forgot Password
+    </button>
+
+    <div class="spacer" style="width:300px;height:10px;" id="login-spacer14"></div>
+
+    <button  on-click="goToSignup()" id="login-button2" ion-button clear color="dark" block style="font-weight:500;">
+      Or create an account
+    </button>
+  </form>
+</ion-content>
